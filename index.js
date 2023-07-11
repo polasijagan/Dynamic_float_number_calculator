@@ -1,14 +1,14 @@
 // Online Javascript Editor for free
-import { checkGreaterOrLesser } from './greaterOrLesser.js';
+import { firstIsgreaterThenSecond } from './greaterOrLesser.js';
 // Write, Edit and Run your Javascript code using JS Online Compiler
 
+ 
 console.log("Welcome to Programiz!");
+function floatNumGreater(num1,num2){
+   return firstIsgreaterThenSecond(num1,num2)
+}
 
-console.log(checkGreaterOrLesser(number1,number2,model));
-module.exports = checkGreaterOrLesser(number1,number2,model)
-// console.log(listoutResults)
-// const found = listoutResults.find(element => element  == false);
-// console.log("found ", found == undefined)
+module.exports = floatNumGreater
 
 
 

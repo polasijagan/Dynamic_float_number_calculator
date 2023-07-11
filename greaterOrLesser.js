@@ -1,30 +1,19 @@
+import { arrangeOrder,checkingDigits } from './util.js';
 
 
- function checkThetwoNumber(num1, num2,model){
-    if (model == 'greaterThan'){
-        return num1 > num2
-    }else if (model == 'greaterThanOrEqual'){
-        return num1 >= num2
-    }else if (model == 'lessThan'){
-        return num1 < num2
-    }else if (model == 'lessThanOrEqual'){
-        return num1 <= num2
-    }
-}
-
-export function checkGreaterOrLesser(number1,number2,model){
-    let listoutResults = [];
-    console.log(typeof number1)
+export function firstIsgreaterThenSecond(number1,number2,model){
+    let listoutResults = []
     if (typeof number1 === "string"){
-        const number1ArrayList = number1.split(".");
-        console.log("number1ArrayList ",number1ArrayList)
         if(typeof number2 === "string"){
-            const number2ArrayList = number2.split(".");
-            for (var i =0; i<number1ArrayList.length; i++){
-                return listoutResults.push(checkThetwoNumber(number1ArrayList[i],number2ArrayList[i], model))
+            let response = arrangeOrder(number1,number2)
+            const number2ArrayList = response['num2_Data'].split(".");
+            const number1ArrayList = response['num1_Data'].split(".");
+           let response2 =  checkingDigits(response['num1_Data'],response['num2_Data'])
+            if(response2['num1_Data'] >= response2['num2_Data']){
+                return true
+            }else{
+                return false
             }
-            console.log("number2ArrayList ",number2ArrayList)
-            return "number 2"
         }else {
             return "passing data issues2, accept string only"
         }
