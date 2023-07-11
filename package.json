@@ -1,0 +1,24 @@
+{
+  "name": "dynamic_float_number_calculator",
+  "version": "1.0.0",
+  "description": "The user sends the floating numbers, package handle the dynamically to calculates and returns the appropriate result.like addition, subtraction, multiplication, division, gratethen and lessthan",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/polasijagan/Dynamic_float_number_calculator.git"
+  },
+  "keywords": [
+    "float",
+    "number",
+    "calculator"
+  ],
+  "author": "jaganmohan.polasi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/polasijagan/Dynamic_float_number_calculator/issues"
+  },
+  "homepage": "https://github.com/polasijagan/Dynamic_float_number_calculator#readme"
+}
