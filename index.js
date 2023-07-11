@@ -4,11 +4,11 @@ import { firstIsgreaterThenSecond } from './greaterOrLesser.js';
 
  
 console.log("Welcome to Programiz!");
-function floatNumGreater(num1,num2){
+function floatingNumberIsGreaterOrNot(num1,num2){
    return firstIsgreaterThenSecond(num1,num2)
 }
 
-module.exports = floatNumGreater
+module.exports = floatingNumberIsGreaterOrNot
 
 
 
