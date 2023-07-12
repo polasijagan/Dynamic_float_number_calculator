@@ -9,11 +9,20 @@ export function firstIsgreaterThenSecond(number1,number2,model){
             const number2ArrayList = response['num2_Data'].split(".");
             const number1ArrayList = response['num1_Data'].split(".");
            let response2 =  checkingDigits(response['num1_Data'],response['num2_Data'])
-            if(response2['num1_Data'] >= response2['num2_Data']){
+           if(model == 'greaterOrEqual'){
+                if(response2['num1_Data'] >= response2['num2_Data']){
+                    return true
+                }else{
+                    return false
+                }
+           }else if(model == 'greaterOrNot'){
+            if(response2['num1_Data'] > response2['num2_Data']){
                 return true
             }else{
                 return false
             }
+           }
+            
         }else {
             return "passing data issues2, accept string only"
         }

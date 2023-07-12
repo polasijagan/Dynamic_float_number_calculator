@@ -4,9 +4,13 @@ import { firstIsgreaterThenSecond } from './greaterOrLesser.js';
 
  
 console.log("Welcome to Programiz!");
-export function floatingNumberIsGreaterOrNot(num1,num2){
-   return firstIsgreaterThenSecond(num1,num2)
+export function isGreaterOrNot(num1,num2){
+   return firstIsgreaterThenSecond(num1,num2,'greaterOrNot')
 }
+export function isGreaterThenOrEqual(num1,num2){
+   return firstIsgreaterThenSecond(num1,num2,'greaterOrEqual')
+}
+
 
 
 
