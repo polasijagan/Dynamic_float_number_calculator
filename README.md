@@ -1,2 +1,2 @@
-# @types/dynamic_floating_number_calculator
+# dynamic_floating_number_calculator_data
 The user sends the floating numbers, package handle the dynamically to calculates and returns the appropriate result.like addition, subtraction, multiplication, division, gratethen and lessthan 
