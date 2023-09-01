@@ -1,6 +1,6 @@
 {
   "name": "dynamic-floating-number-calculator",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "The user sends the floating numbers, package handle the dynamically to calculates and returns the appropriate result.like addition, subtraction, multiplication, division, gratethen and lessthan",
   "main": "index.js",
   "type": "module",
